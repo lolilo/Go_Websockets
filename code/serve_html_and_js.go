@@ -1,7 +1,7 @@
 import "html/template"
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
-	rootTemplate.Execute(w. listenAddr)
+	rootTemplate.Execute(w, listenAddr) // global variable rootTemplate
 }
 
 var rootTemplate = template.Must(template.New("root".Parse('
