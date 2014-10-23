@@ -1,12 +1,21 @@
 // Type JavaScript into browser console to test server code. 
 
 /* 
+
+http://www.html5rocks.com/en/tutorials/websockets/basics/
+
 Construct a websocket connecting to localhost:4000
 var sock = new WebSocket("ws://localhost:4000/");
+
+Notice the ws:. This is the new URL schema for WebSocket connections. 
+There is also wss: for secure WebSocket connection 
+the same way https: is used for secure HTTP connections.
+
 
 message handler
 every message received will be logged in the JS console
 sock.onmessage = function(m) { console.log("Received:", m.data); }
+
 
 send the message hello
 sock.send("Hello!\n")
