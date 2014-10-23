@@ -1,4 +1,4 @@
-// JavaScript to place into browser console to test server code. 
+// Type JavaScript into browser console to test server code. 
 
 /* 
 Construct a websocket connecting to localhost:4000
